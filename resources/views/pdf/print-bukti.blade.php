@@ -47,7 +47,7 @@
         <td colspan="*">
             <tr>
                 <td valign='top' style='font-size:12px;'>{{$data->room->roomType->name}}</td>
-                <td valign='top' style='font-size:12px;'>@currency($data->room->roomType->price)</td>
+                <td valign='top' style='font-size:12px;'>@currency($data->room->roomType->price) DA</td>
                 <td valign='top' style='font-size:12px;'>{{ $data->check_in }}</td>
                 <td valign='top' style='font-size:12px;'>{{ $data->check_out }}</td>
                 <td valign='top' style='font-size:12px;'>{{ $data->many_room}}</td>
@@ -95,7 +95,7 @@
 <table width='100%' cellspacing='0' cellpadding='2' border='0'>
     <tr>
         <td  align='right' style='font-size:12px;'><b>Total :</b></td>
-        <td  align='right' style='font-size:12px;'><b>@currency($data->payment->price)</b></td>
+    <td  align='right' style='font-size:12px;'><b>@currency($data->payment->price) DA</b></td>
     </tr>
 </table>
 

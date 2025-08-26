@@ -301,7 +301,7 @@
                                 <i class="fas fa-dollar-sign"></i>Price per Night
                             </div>
                             <div class="detail-value">
-                                <span class="price-highlight">@currency($data->price)</span>
+                                <span class="price-highlight">@currency($data->price) DA</span>
                             </div>
                         </div>
                         
@@ -399,14 +399,13 @@
                                     <label for="check_out" class="form-label">
                                         <i class="fas fa-sign-out-alt"></i>Check Out Date
                                     </label>
-                                    <input type="date" 
-                                           disabled 
-                                           min='<?= date('Y-m-d', strtotime('+1 day')); ?>' 
-                                           class="form-control @error('check_out') is-invalid @enderror" 
-                                           value="{{ old('check_out') }}" 
-                                           required 
-                                           name="check_out" 
-                                           id="check_out">
+                     <input type="date" 
+                         min='<?= date('Y-m-d', strtotime('+1 day')); ?>' 
+                         class="form-control @error('check_out') is-invalid @enderror" 
+                         value="{{ old('check_out') }}" 
+                         required 
+                         name="check_out" 
+                         id="check_out">
                                     @error('check_out')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
@@ -438,28 +437,30 @@
 
 @section('script')
 <script>
-    function checkout(){
-        var checkin = new Date($('#check_in').val());
-        var dd = checkin.getDate()+1;
-        var mm = checkin.getMonth()+1;
-        var yyyy = checkin.getFullYear();
-        var lastDayOfMonth = new Date(yyyy, mm, 0);
-        if(dd<10){
-            dd='0'+dd
-        }
-        if(dd > lastDayOfMonth.getDate()){
-            dd='01'
-            mm+=1
-        }
-        if(mm<10){
-            mm='0'+mm
-        }
 
-        today = yyyy+'-'+mm+'-'+dd;
-        console.log(today);
-        document.getElementById("check_out").setAttribute("min", today);
-        document.getElementById("check_out").removeAttribute("disabled");
+    function checkout() {
+        var checkinVal = document.getElementById('check_in').value;
+        if (!checkinVal) return;
+        var checkin = new Date(checkinVal);
+        // Add one day to check-in
+        var nextDay = new Date(checkin.getTime() + 24 * 60 * 60 * 1000);
+        var yyyy = nextDay.getFullYear();
+        var mm = String(nextDay.getMonth() + 1).padStart(2, '0');
+        var dd = String(nextDay.getDate()).padStart(2, '0');
+        var minCheckout = yyyy + '-' + mm + '-' + dd;
+        document.getElementById('check_out').setAttribute('min', minCheckout);
+        document.getElementById('check_out').removeAttribute('disabled');
     }
+
+    // On page load, if check-in has a value, run checkout()
+    document.addEventListener('DOMContentLoaded', function() {
+        var checkinInput = document.getElementById('check_in');
+        if (checkinInput && checkinInput.value) {
+            checkout();
+        }
+        // Also, run checkout() when check-in changes
+        checkinInput?.addEventListener('change', checkout);
+    });
 
     // Form validation and loading state
     document.getElementById('bookingForm')?.addEventListener('submit', function(e) {

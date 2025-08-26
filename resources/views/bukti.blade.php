@@ -259,7 +259,7 @@
                         
                         <div class="detail-row">
                             <span class="detail-label">Price/Room</span>
-                            <span class="detail-value">@currency($data->room->roomType->price)</span>
+                            <span class="detail-value">@currency($data->room->roomType->price) DA</span>
                         </div>
                     </div>
                     
@@ -267,7 +267,7 @@
                     <div class="total-section">
                         <div class="total-row">
                             <span>Total Amount</span>
-                            <span>@currency($data->payment->price)</span>
+                            <span>@currency($data->payment->price) DA</span>
                         </div>
                         <p class="thank-you">** Thank You for Choosing Hotel Hebat **</p>
                         

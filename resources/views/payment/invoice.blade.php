@@ -26,7 +26,7 @@
                     </thead>
                     <tbody>
                         <tr class="text-center">
-                            <td>@currency($totalHarga)</td>
+                            <td>@currency($totalHarga) DA</td>
                         </tr>
                     </tbody>
                 </table>

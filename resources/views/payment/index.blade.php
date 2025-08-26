@@ -35,8 +35,8 @@
                                 <td>{{ $dataType->name }}</td>
                                 <td>{{ $jumlahPesanan }}</td>
                                 <td>{{ $totalMalam }}</td>
-                                <td>@currency($dataType->price)</td>
-                                <td>@currency($totalHarga)</td>
+                                <td>@currency($dataType->price) DA</td>
+                                <td>@currency($totalHarga) DA</td>
                             </tr>
                         </tbody>
                     </table>

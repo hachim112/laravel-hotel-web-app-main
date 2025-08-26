@@ -40,6 +40,12 @@
     
     @keyframes fadeInUp {
         from {
+            @auth
+                <form id="logout-form-navbar" action="{{ route('logout') }}" method="POST" class="d-inline">
+                    @csrf
+                    <button type="submit" class="btn btn-danger mt-3"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </form>
+            @endauth
             opacity: 0;
             transform: translateY(50px);
         }
@@ -373,6 +379,12 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Hotel Types</h2>
+            @auth
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
+                    @csrf
+                    <button type="submit" class="btn btn-danger mt-3"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </form>
+            @endauth
         </div>
         <div class="row mb_30">
             @if(isset($roomTypes) && count($roomTypes) > 0)
@@ -389,7 +401,7 @@
                             </div>
                             <a href="{{ route('detail.room', $item->id) }}"><h4 class="sec_h4">{{ $item->name }}</h4></a>
                             <a href="{{ route('detail.room', $item->id) }}">
-                                <h5>@currency($item->price)<small>/night</small></h5>
+                                <h5>@currency($item->price) DA<small>/night</small></h5>
                             </a>
                             <p>Kamar Tersedia : {{ $item->getTotalRooms->count() }}</p>
                         </div>

@@ -42,8 +42,8 @@
                                     <td>{{ $item->room->roomType->name }}</td>
                                     <td>{{ $item->roomNumber->number }}</td>
                                     <td>{{ $item->many_room }}</td>
-                                    <td>@currency($item->room->roomType->price)</td>
-                                    <td>@currency($item->payment->price)</td>
+                                    <td>@currency($item->room->roomType->price) DA</td>
+                                    <td>@currency($item->payment->price) DA</td>
                                     <td>{{ $item->status }}</td>
                                     <td>
                                         @if ($item->status == 'canceled')

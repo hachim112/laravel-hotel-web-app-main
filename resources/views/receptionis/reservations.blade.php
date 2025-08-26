@@ -49,8 +49,8 @@
                                             <td>{{ $item->many_room }}</td>
                                             <td>{{ $item->check_in . ' - ' . $item->check_out}}</td>
                                             <td>{{ $item->created_at->diffForHumans() }}</td>
-                                            <td>@currency($item->room->roomType->price)</td>
-                                            <td>@currency($item->payment->price)</td>
+                                            <td>@currency($item->room->roomType->price) DA</td>
+                                            <td>@currency($item->payment->price) DA</td>
                                             <td>{{ Str::ucfirst($item->status) }}</td>
                                             <td>
                                                 @if ($item->status == 'canceled')

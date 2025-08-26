@@ -195,7 +195,7 @@
                             </td>
                             <td>
                                 <span class="price-badge">
-                                    Rp {{ number_format($dt->price, 0, ',', '.') }}
+                                    {{ number_format($dt->price, 0, ',', '.') }} DA
                                 </span>
                             </td>
                             <td>
