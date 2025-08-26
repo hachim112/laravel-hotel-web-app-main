@@ -46,6 +46,7 @@ Route::group(['middleware' => 'prevent'], function(){
 
             Route::get('/admin', [HomeController::class, 'admin'])->name('admin.home');
             Route::get('/admin/logs', [TransactionController::class, 'logs'])->name('admin.logs');
+            Route::get('/admin/bookings', [TransactionController::class, 'adminBookings'])->name('admin.bookings');
 
             //CRUD KAMAR
             Route::resource('room', RoomController::class)->except('destroy');

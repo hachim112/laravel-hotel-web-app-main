@@ -180,7 +180,7 @@
 
         <!-- FOOTER -->
         <footer>
-            <p>&copy; 2025 Hotel Hebat. All Rights Reserved.</p>
+            <p>&copy; 2025 Hotel Mermoura. All Rights Reserved.</p>
         </footer>
     </div>
 

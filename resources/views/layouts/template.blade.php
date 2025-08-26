@@ -41,6 +41,21 @@
 								<i class="fas fa-user-plus"></i> Register
 							</a>
 						</li>
+					@else
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fas fa-user-circle"></i> {{ Auth::user()->name }}
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="/profile"><i class="fas fa-id-card"></i> Profile</a></li>
+								<li>
+									<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
+										@csrf
+										<button type="submit" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</button>
+									</form>
+								</li>
+							</ul>
+						</li>
 					@endguest
 				</ul>
 			</div>
