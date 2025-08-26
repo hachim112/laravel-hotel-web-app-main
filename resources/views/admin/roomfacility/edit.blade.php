@@ -183,10 +183,13 @@
 
 <div class="page-header">
     <h1><i class="fas fa-edit mr-3"></i>Edit Room Facility</h1>
-    <p>Update facility information for Hotel Hebat rooms</p>
+    <p>Update facility information for Hotel Mermoura rooms</p>
     <div class="breadcrumb-modern">
         <a href="{{ route('roomfacility.index') }}">Room Facilities</a> / Edit
     </div>
+        <p>Update facility information for Hotel Mermoura rooms</p>
+        <p>Update facility information for Hotel Mermoura rooms</p>
+        <p>Update facility information for Hotel Mermoura rooms</p>
 </div>
 
 <div class="modern-card">
@@ -223,7 +226,7 @@
                 @error('facility_name')
                     <div class="invalid-feedback" style="display: block; color: #ef4444; margin-top: 8px; font-size: 0.875rem;">
                         <i class="fas fa-exclamation-circle mr-1"></i>
-                        <strong>{{ $message }}</strong>
+                        <label for="facility_name">Facility Name</label>
                     </div>
                 @enderror
             </div>

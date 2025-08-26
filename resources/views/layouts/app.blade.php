@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ 'Hotel Hebat' }}</title>
+    <title>{{ 'Hotel Mermoura' }}</title>
 
     <!-- Bootstrap & jQuery -->
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">

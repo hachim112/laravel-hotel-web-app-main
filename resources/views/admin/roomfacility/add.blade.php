@@ -172,7 +172,7 @@
 
 <div class="page-header">
     <h1><i class="fas fa-plus-circle mr-3"></i>Add Room Facility</h1>
-    <p>Create a new facility for Hotel Hebat rooms</p>
+    <p>Create a new facility for Hotel Mermoura rooms</p>
     <div class="breadcrumb-modern">
         <a href="{{ route('roomfacility.index') }}">Room Facilities</a> / Add New
     </div>

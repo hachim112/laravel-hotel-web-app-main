@@ -6,7 +6,7 @@
 
 <hr><width="100" height="75">
 
-    <center><b style="font-family: 'Courier New', Courier, monospace; font-size: 50px;">HOTEL <span style="color: blue">HEBAT</span></b></center><br>
+    <center><b style="font-family: 'Courier New', Courier, monospace; font-size: 50px;">HOTEL <span style="color: blue">MERMOURA</span></b></center><br>
     <center><b>Jl. Otto Iskandardinata, Kabupaten Garut, Jawa Barat<b></center><br>
 
 <hr><width="100" height="75">
@@ -102,7 +102,7 @@
 <table width='100%' height='50'><tr><td style='font-size:12px;text-align:justify;'></td></tr></table><br><br><br>
 <table  width='100%' cellspacing='0' cellpadding='2'>
     <tr>
-        <td width='33%' style='border-top:double medium #CCCCCC;font-size:12px;' valign='top' ><b>HOTEL<span style="color: blue"> HEBAT</span></b><br/>Jl. Otto Iskandardinata, Kabupaten Garut, Jawa Barat<br/>Phone: +62-896-3070-6721<br/></td>
+    <td width='33%' style='border-top:double medium #CCCCCC;font-size:12px;' valign='top' ><b>HOTEL<span style="color: blue"> MERMOURA</span></b><br/>Jl. Otto Iskandardinata, Kabupaten Garut, Jawa Barat<br/>Phone: +62-896-3070-6721<br/></td>
         <td valign='top' width='34%' style='border-top:double medium #CCCCCC;font-size:12px;' align='right'>Invoice Hotel<br/></td>
       </tr>
 </table>

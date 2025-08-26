@@ -153,7 +153,7 @@
 
 <div class="page-header">
     <h1>Room Facility Management</h1>
-    <p>Manage and organize room facilities for Hotel Hebat</p>
+    <p>Manage and organize room facilities for Hotel Mermoura</p>
 </div>
 
 <div class="modern-card">

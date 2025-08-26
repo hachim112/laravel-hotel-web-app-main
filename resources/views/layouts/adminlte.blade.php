@@ -7,7 +7,7 @@
     @hasSection ('title')
         @yield('title')
     @else
-        Hotel Hebat App
+    Hotel Mermoura App
     @endif
 </title>
 

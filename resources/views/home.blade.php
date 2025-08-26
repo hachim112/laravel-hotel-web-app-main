@@ -236,7 +236,7 @@
                         @endif
 
                         <div class="welcome-message">
-                            <strong>Welcome back!</strong> You are successfully logged in to Hotel Hebat.
+                            <strong>Welcome back!</strong> You are successfully logged in to Hotel Mermoura.
                         </div>
                         
                         <!-- Added quick action buttons -->

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login - Hotel Hebat</title>
+  <title>Login - Hotel Mermoura</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -285,7 +285,7 @@
 
   <div class="login-container">
     <div class="logo">
-      <h1>Hotel<span class="highlight"> Hebat</span></h1>
+  <h1>Hotel<span class="highlight"> Mermoura</span></h1>
     </div>
     
     <p class="welcome-text">Welcome back! Please sign in to your account</p>

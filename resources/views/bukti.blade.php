@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bukti Pembayaran Hotel Hebat</title>
+    <title>Bukti Pembayaran Hotel Mermoura</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Added modern styling and animations -->
     <style>
@@ -220,7 +220,7 @@
                 <div class="receipt-container">
                     <!-- Enhanced header with modern design -->
                     <div class="receipt-header">
-                        <h1 class="hotel-title">HOTEL HEBAT</h1>
+                        <h1 class="hotel-title">HOTEL MERMOURA</h1>
                         <h2 class="receipt-subtitle">Payment Receipt</h2>
                         <p class="hotel-address">Jl. Mana aja No 07 California 177854 (+1) 234-1233</p>
                     </div>
@@ -269,7 +269,7 @@
                             <span>Total Amount</span>
                             <span>@currency($data->payment->price) DA</span>
                         </div>
-                        <p class="thank-you">** Thank You for Choosing Hotel Hebat **</p>
+                        <p class="thank-you">** Thank You for Choosing Hotel Mermoura **</p>
                         
                         @if(app('router')->getRoutes()->match(app('request')->create(URL::current()))->getName() == 'transaction.proof')
                             <div class="text-center">

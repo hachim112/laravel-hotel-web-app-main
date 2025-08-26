@@ -9,7 +9,7 @@
             <div class="section-heading">
                 <h2>
                     <center>
-                        Daftar Transaksi
+                        Transaction List
                     </center>
                 </h2>
             </div>
@@ -19,19 +19,19 @@
                 <table class="table table-hover">
                     <thead>
                         <tr class="text-center">
-                            <th>Type Kamar</th>
-                            <th>Nomor Kamar</th>
-                            <th>Jumlah Pesanan</th>
-                            <th>Harga Permalam</th>
-                            <th>Total Harga</th>
-                            <th>Status Transaksi</th>
+                            <th>Room Type</th>
+                            <th>Room Number</th>
+                            <th>Number of Bookings</th>
+                            <th>Price per Night</th>
+                            <th>Total Price</th>
+                            <th>Transaction Status</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @if ($datas == '[]')
                             <tr class="text-center table-primary">
-                                <td colspan="7">Tidak ada transaksi</td>
+                                <td colspan="7">No transactions found</td>
 
                             </tr>
                         @else
@@ -99,7 +99,7 @@
                                             Checked Out on {{ $item->updated_at }}
                                         @else
                                             <div class="btn-group">
-                                                <a href="{{ route('customer.cancel.transaction', $item->id) }}" onclick="return confirm('Yakin ingin membatalkan transaksi ini?')" class="btn btn-sm btn-danger">Cancel</a>
+                                                <a href="{{ route('customer.cancel.transaction', $item->id) }}" onclick="return confirm('Are you sure you want to cancel this transaction?')" class="btn btn-sm btn-danger">Cancel</a>
                                                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#payType">
                                                     Pay
                                                 </button>

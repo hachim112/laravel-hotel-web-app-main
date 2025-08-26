@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to Hotel Hebat</title>
+    <title>Welcome to Hotel Mermoura</title>
     <!-- Added modern welcome page design -->
     <style>
         * {
@@ -204,7 +204,7 @@
     
     <!-- Created professional welcome page -->
     <div class="welcome-container">
-        <h1 class="welcome-title">Welcome to Hotel Hebat</h1>
+    <h1 class="welcome-title">Welcome to Hotel Mermoura</h1>
         <p class="welcome-subtitle">Experience luxury, comfort, and exceptional service</p>
         
         <div class="welcome-buttons">

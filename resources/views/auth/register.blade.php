@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register - Hotel Hebat</title>
+  <title>Register - Hotel Mermoura</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -348,7 +348,7 @@
 
   <div class="register-container">
     <div class="logo">
-      <h1>Hotel<span class="highlight"> Hebat</span></h1>
+  <h1>Hotel<span class="highlight"> Mermoura</span></h1>
     </div>
     
     <p class="welcome-text">Create your account to get started</p>

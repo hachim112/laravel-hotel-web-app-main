@@ -456,7 +456,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src="{{ asset('template/image/about_bg.jpg') }}" alt="About Hotel Hebat">
+                <img class="img-fluid" src="{{ asset('template/image/about_bg.jpg') }}" alt="About Hotel Mermoura">
             </div>
         </div>
     </div>
